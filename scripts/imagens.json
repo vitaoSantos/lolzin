@@ -1,0 +1,28 @@
+{
+  "_sobre": "Imagens geradas por IA para o site (ver docs/prompts-imagens.md). Arte original: nenhum campeão, logo ou texto da Riot. Rodar com: node scripts/gerar-imagens.mjs",
+  "modelo": "flash",
+  "resolucao": "1K",
+  "estilo": "dark cinematic high-fantasy art, deep navy-black background, rich volumetric light, subtle film grain, ultra detailed, original artwork, no characters from existing games, no text, no letters, no logos, no watermark",
+  "imagens": [
+    { "arquivo": "busca-hero", "proporcao": "16:9", "prompt": "panorama of floating arcane hexagonal runes and shattered crystal shards drifting over a misty abyss, gold and teal rim light, god rays from the upper right, large empty dark area on the left side for headline text" },
+    { "arquivo": "modo-ranqueada", "proporcao": "16:9", "prompt": "abstract competitive war room seen from above, dark slate table with glowing gold tactical lines, hexagon grid, holographic shield crest silhouettes, minimalist and elegant" },
+    { "arquivo": "modo-aram", "proporcao": "16:9", "prompt": "ancient frozen stone bridge over a bottomless icy chasm at night, howling blizzard, pale blue moonlight, ruined arches, swirling snow particles" },
+    { "arquivo": "modo-arena", "proporcao": "16:9", "prompt": "ancient fantasy colosseum ring at dusk seen from a high angle, embers and sparks swirling, warm orange and crimson light, sand floor with arcane circle, dramatic smoke" },
+    { "arquivo": "modo-normal", "proporcao": "16:9", "prompt": "magical forest clearing at golden hour, floating glowing spores and fireflies, soft bokeh, calm playful mood" },
+    { "arquivo": "modo-evento", "proporcao": "16:9", "prompt": "festive arcane night sky with colorful magical fireworks over floating islands, confetti of light, joyful energy" },
+    { "arquivo": "persona-especialista", "proporcao": "1:1", "prompt": "ornate fantasy emblem medallion, a single sword piercing a small crown, symbol of mastery, gold filigree, glowing core, centered, symmetrical game badge" },
+    { "arquivo": "persona-camaleao", "proporcao": "1:1", "prompt": "ornate fantasy emblem medallion, a chameleon made of shifting stained-glass shards in many colors, gold filigree, centered, symmetrical game badge" },
+    { "arquivo": "persona-carregador", "proporcao": "1:1", "prompt": "ornate fantasy emblem medallion, armored titan shoulders carrying a burning sun, gold filigree, centered, symmetrical game badge" },
+    { "arquivo": "persona-guardiao", "proporcao": "1:1", "prompt": "ornate fantasy emblem medallion, an all-seeing eye inside a lantern surrounded by small glowing wards, teal light, gold filigree, centered, symmetrical game badge" },
+    { "arquivo": "persona-fazendeiro", "proporcao": "1:1", "prompt": "ornate fantasy emblem medallion, golden wheat sheaf crossed with a short blade over a pile of coins, gold filigree, centered, symmetrical game badge" },
+    { "arquivo": "persona-kamikaze", "proporcao": "1:1", "prompt": "ornate fantasy emblem medallion, a flaming comet crashing down with a fierce grin, red and orange fire, gold filigree, centered, symmetrical game badge" },
+    { "arquivo": "persona-intocavel", "proporcao": "1:1", "prompt": "ornate fantasy emblem medallion, a pristine crystal shield with arrows shattering against it, cool white light, gold filigree, centered, symmetrical game badge" },
+    { "arquivo": "persona-duelista", "proporcao": "1:1", "prompt": "ornate fantasy emblem medallion, two crossed rapiers facing each other with sparks at the contact point, gold filigree, centered, symmetrical game badge" },
+    { "arquivo": "persona-coruja", "proporcao": "1:1", "prompt": "ornate fantasy emblem medallion, a night owl with glowing violet eyes perched on a crescent moon, stars, gold filigree, centered, symmetrical game badge" },
+    { "arquivo": "persona-maratonista", "proporcao": "1:1", "prompt": "ornate fantasy emblem medallion, an hourglass wrapped in an infinity loop of running flame, gold filigree, centered, symmetrical game badge" },
+    { "arquivo": "persona-protetor", "proporcao": "1:1", "prompt": "ornate fantasy emblem medallion, guardian wings wrapped around a glowing heart, soft healing green and gold light, gold filigree, centered, symmetrical game badge" },
+    { "arquivo": "persona-interrogacao", "proporcao": "1:1", "prompt": "ornate fantasy emblem medallion, a large glowing question mark carved in ancient stone with radiating signal rings, playful mood, gold filigree, centered, symmetrical game badge" },
+    { "arquivo": "persona-gladiador", "proporcao": "1:1", "prompt": "ornate fantasy emblem medallion, a gladiator helmet crowned with laurels over crossed spears, warm ember light, gold filigree, centered, symmetrical game badge" },
+    { "arquivo": "persona-aventureiro", "proporcao": "1:1", "prompt": "ornate fantasy emblem medallion, a compass rose over an unfinished parchment map, gold filigree, centered, symmetrical game badge" }
+  ]
+}

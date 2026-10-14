@@ -1,6 +1,7 @@
 # Estudo de caso: landing pages dinâmicas por invocador (League of Legends)
 
-> **Status:** estudo de viabilidade, para decidirmos o escopo. Nenhum código ainda.
+> **Status:** estudo de viabilidade. O MVP (busca, landing dinâmica, templates por modo, persona,
+> dicas e recomendações) já está implementado: veja o [README](../README.md).
 > **Data:** outubro de 2026 (temporada 2026, patch 26.2x).
 
 ---

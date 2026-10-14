@@ -1,0 +1,15 @@
+{
+  "name": "lolzin",
+  "private": true,
+  "type": "module",
+  "description": "Landing pages dinâmicas por invocador de League of Legends, montadas na hora.",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:cloudflare": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test test/*.test.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4.151.0"
+  }
+}

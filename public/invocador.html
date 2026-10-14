@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Montando sua página · lolzin</title>
+  <meta name="description" content="Uma landing page de League of Legends montada na hora, com o seu main, o seu modo de jogo e o seu jeito de jogar.">
+  <meta name="theme-color" content="#07080c">
+  <link rel="icon" href="/img/icone.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ddragon.leagueoflegends.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Space+Grotesk:wght@400;500;700&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/invocador.css">
+</head>
+<body>
+  <div class="carregador" id="carregador" role="status" aria-live="polite">
+    <div class="carregador__fundo" id="carregador-fundo"></div>
+    <div class="carregador__centro">
+      <div class="anel-caixa">
+        <svg class="anel" viewBox="0 0 132 132" aria-hidden="true">
+          <circle class="anel__trilho" cx="66" cy="66" r="60"/>
+          <circle class="anel__progresso" id="anel-progresso" cx="66" cy="66" r="60"/>
+        </svg>
+        <span class="anel-caixa__pct" id="anel-pct">0%</span>
+      </div>
+      <p class="carregador__alvo" id="carregador-alvo">Procurando…</p>
+      <ol class="etapas" id="etapas">
+        <li data-etapa="conta">Encontrando a conta</li>
+        <li data-etapa="maestria">Lendo elo e maestrias</li>
+        <li data-etapa="partidas">Analisando partidas <span id="contador-partidas"></span></li>
+        <li data-etapa="montagem">Montando sua página</li>
+      </ol>
+    </div>
+  </div>
+
+  <canvas class="particulas" id="particulas" aria-hidden="true"></canvas>
+
+  <header class="topo" id="topo">
+    <a class="marca" href="/"><i class="marca__simbolo" aria-hidden="true"></i>lolzin<span>.</span></a>
+    <nav class="topo__nav" aria-label="Seções da página" id="nav-perfil"></nav>
+  </header>
+
+  <main id="pagina" hidden></main>
+
+  <footer class="rodape">
+    <div class="rodape__grade">
+      <a class="marca" href="/"><i class="marca__simbolo" aria-hidden="true"></i>lolzin<span>.</span></a>
+      <p>O lolzin não é endossado pela Riot Games e não reflete as opiniões da Riot Games ou de qualquer pessoa oficialmente envolvida na produção ou gestão das propriedades da Riot Games. Riot Games e todas as propriedades associadas são marcas comerciais ou registradas da Riot Games, Inc.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/invocador.js"></script>
+</body>
+</html>

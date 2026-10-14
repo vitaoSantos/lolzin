@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>lolzin · sua página de invocador</title>
+  <meta name="description" content="Digite seu Riot ID e veja nascer uma landing page com a cara do seu main, do seu modo de jogo e do seu jeito de jogar.">
+  <meta name="theme-color" content="#07080c">
+  <link rel="icon" href="/img/icone.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ddragon.leagueoflegends.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Space+Grotesk:wght@400;500;700&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/busca.css">
+</head>
+<body>
+  <header class="topo" id="topo">
+    <a class="marca" href="/"><i class="marca__simbolo" aria-hidden="true"></i>lolzin<span>.</span></a>
+    <nav class="topo__nav" aria-label="Seções">
+      <a href="#recursos">O que você recebe</a>
+      <a href="#como">Como funciona</a>
+      <a href="#exemplos">Exemplos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-busca" aria-labelledby="titulo-principal">
+      <div class="mural" aria-hidden="true"><div class="mural__plano" id="mural"></div></div>
+      <div class="hero-busca__veu" id="veu-hero"></div>
+      <div class="hero-busca__aurora" aria-hidden="true"></div>
+
+      <div class="hero-busca__conteudo">
+        <p class="sobrancelha">League of Legends · páginas que se montam sozinhas</p>
+        <h1 class="titulo-cinetico" id="titulo-principal">
+          <span class="linha" data-cinetico>Digite seu Riot ID.</span>
+          <span class="linha" data-cinetico>A gente monta o seu <span class="rotativo" id="rotativo">palco.</span></span>
+        </h1>
+
+        <form class="busca" id="form-busca" novalidate>
+          <label class="busca__regiao">
+            <span class="sr">Região</span>
+            <select name="plataforma" id="plataforma">
+              <option value="br1" selected>BR</option>
+              <option value="la1">LAN</option>
+              <option value="la2">LAS</option>
+              <option value="na1">NA</option>
+              <option value="euw1">EUW</option>
+              <option value="eun1">EUNE</option>
+              <option value="tr1">TR</option>
+              <option value="ru">RU</option>
+              <option value="me1">ME</option>
+              <option value="kr">KR</option>
+              <option value="jp1">JP</option>
+              <option value="oc1">OCE</option>
+              <option value="sg2">SG</option>
+              <option value="tw2">TW</option>
+              <option value="vn2">VN</option>
+            </select>
+          </label>
+          <label class="busca__campo">
+            <span class="sr">Riot ID (Nome#TAG)</span>
+            <input id="riot-id" name="riotId" type="text" placeholder="Nome#TAG" autocomplete="off" spellcheck="false" aria-describedby="ajuda-busca" required>
+          </label>
+          <button class="botao botao--primario" type="submit" data-magnetico>
+            Montar minha página
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </form>
+        <p class="busca__ajuda" id="ajuda-busca" aria-live="polite">A TAG é o que vem depois do <code>#</code>. Exemplo: <code>Kami#BR1</code></p>
+        <p class="aviso-servidor" id="aviso-servidor" hidden><i class="ponto" aria-hidden="true"></i><span></span></p>
+
+        <div class="linha-chips" id="recentes" hidden><span>Buscados aqui:</span></div>
+        <div class="linha-chips" id="exemplos">
+          <span>Ou veja um exemplo:</span>
+          <a class="chip" href="/invocador?demo=ranqueada">Ranqueada · Ahri</a>
+          <a class="chip" href="/invocador?demo=aram">ARAM · Caos</a>
+          <a class="chip" href="/invocador?demo=arena">Arena · Gladiador</a>
+        </div>
+      </div>
+
+      <a class="rolar" href="#recursos">Role</a>
+    </section>
+
+    <div class="faixa" aria-hidden="true">
+      <div class="faixa__trilho">
+        <span class="faixa__item">Ranqueada</span><span class="faixa__item">ARAM</span><span class="faixa__item">Arena</span>
+        <span class="faixa__item">Swiftplay</span><span class="faixa__item">Seu main</span><span class="faixa__item">Sua persona</span>
+        <span class="faixa__item">Ranqueada</span><span class="faixa__item">ARAM</span><span class="faixa__item">Arena</span>
+        <span class="faixa__item">Swiftplay</span><span class="faixa__item">Seu main</span><span class="faixa__item">Sua persona</span>
+      </div>
+    </div>
+
+    <section class="secao" id="recursos">
+      <div class="conteiner">
+        <p class="sobrancelha" data-revelar>O que você recebe</p>
+        <h2 class="titulo-secao" data-revelar>Uma página que só existe <em>para você.</em></h2>
+
+        <div class="bento">
+          <article class="cartao bento__tema" data-brilho data-revelar>
+            <div class="troca-splash" id="troca-splash" aria-hidden="true"></div>
+            <div class="paleta" aria-hidden="true"><span></span><span></span><span></span></div>
+            <h3>O tema é o seu main</h3>
+            <p>Splash art, cores, título e região do campeão que você mais joga viram a identidade da página inteira.</p>
+          </article>
+
+          <article class="cartao bento__modos" data-brilho data-revelar style="--i:1">
+            <div class="mini-modos" id="mini-modos" aria-hidden="true">
+              <div class="mini-modo mini-modo--ranqueada ativo">
+                <span class="mini-modo__rotulo">Dossiê competitivo</span>
+                <div class="mini-linha"><div class="mini-bloco" style="height:64px"></div><div class="mini-bloco" style="height:64px"></div></div>
+                <div class="mini-bloco" style="height:22px"></div><div class="mini-bloco" style="height:22px;width:70%"></div>
+              </div>
+              <div class="mini-modo mini-modo--aram">
+                <span class="mini-modo__rotulo">Caos na ponte</span>
+                <div class="mini-linha">
+                  <div class="mini-bloco" style="aspect-ratio:1"></div><div class="mini-bloco" style="aspect-ratio:1"></div><div class="mini-bloco" style="aspect-ratio:1"></div><div class="mini-bloco" style="aspect-ratio:1"></div><div class="mini-bloco" style="aspect-ratio:1"></div><div class="mini-bloco" style="aspect-ratio:1"></div>
+                  <div class="mini-bloco" style="aspect-ratio:1"></div><div class="mini-bloco" style="aspect-ratio:1"></div><div class="mini-bloco" style="aspect-ratio:1"></div><div class="mini-bloco" style="aspect-ratio:1"></div><div class="mini-bloco" style="aspect-ratio:1"></div><div class="mini-bloco" style="aspect-ratio:1"></div>
+                </div>
+              </div>
+              <div class="mini-modo mini-modo--arena">
+                <span class="mini-modo__rotulo">Coliseu</span>
+                <div class="mini-linha">
+                  <div class="mini-bloco" style="height:100%"></div><div class="mini-bloco" style="height:55%"></div><div class="mini-bloco" style="height:40%"></div><div class="mini-bloco" style="height:30%"></div>
+                  <div class="mini-bloco" style="height:35%"></div><div class="mini-bloco" style="height:20%"></div><div class="mini-bloco" style="height:25%"></div><div class="mini-bloco" style="height:15%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="mini-abas" id="mini-abas" aria-hidden="true"><span class="ativa">Ranqueada</span><span>ARAM</span><span>Arena</span></div>
+            <h3 style="margin-top:18px">Cada modo, um layout</h3>
+            <p>Jogador de ranqueada recebe um dossiê. De ARAM, o caos da ponte. De Arena, um coliseu.</p>
+          </article>
+
+          <article class="cartao bento__persona" data-brilho data-revelar style="--i:2">
+            <div class="selo-giratorio" aria-hidden="true">
+              <svg viewBox="0 0 150 150"><defs><path id="circulo-selo" d="M75,75 m-60,0 a60,60 0 1,1 120,0 a60,60 0 1,1 -120,0"/></defs><text><textPath href="#circulo-selo" id="texto-selo">ESPECIALISTA · ESPECIALISTA · ESPECIALISTA ·</textPath></text></svg>
+              <strong id="letra-selo">E</strong>
+            </div>
+            <h3>Sua persona</h3>
+            <p>Especialista, Coruja, Rei do "?"… Seus números viram um arquétipo, com as provas.</p>
+          </article>
+
+          <article class="cartao bento__dicas" data-brilho data-revelar style="--i:3">
+            <div class="mini-barras" aria-hidden="true">
+              <div class="mini-barra">Visão por minuto · você<div class="mini-barra__trilho"><i style="--v:52%"></i></div></div>
+              <div class="mini-barra">Referência para o meio<div class="mini-barra__trilho"><i style="--v:70%"></i></div></div>
+            </div>
+            <h3>Dicas com números</h3>
+            <p>Onde você perde ouro, quando parar de jogar e o que já é ponto forte.</p>
+          </article>
+
+          <article class="cartao bento__recs" data-brilho data-revelar style="--i:4">
+            <div class="leque" id="leque" aria-hidden="true"></div>
+            <h3>Campeões pra você</h3>
+            <p>Os campeões que combinam com o seu estilo e que você ainda não joga, com o porquê.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="como">
+      <div class="conteiner">
+        <p class="sobrancelha" data-revelar>Como funciona</p>
+        <h2 class="titulo-secao" data-revelar>Três passos. <em>Nenhum cadastro.</em></h2>
+        <div class="passos">
+          <article class="cartao passo" data-brilho data-revelar>
+            <span class="passo__numero">01</span>
+            <h3>Digite seu Riot ID</h3>
+            <p>Nome e TAG, como aparece no cliente. Escolha a região e pronto.</p>
+          </article>
+          <article class="cartao passo" data-brilho data-revelar style="--i:1">
+            <span class="passo__numero">02</span>
+            <h3>Lemos suas partidas</h3>
+            <p>Elo, maestrias e suas 20 partidas mais recentes, direto da API oficial da Riot.</p>
+          </article>
+          <article class="cartao passo" data-brilho data-revelar style="--i:2">
+            <span class="passo__numero">03</span>
+            <h3>Sua página nasce</h3>
+            <p>Tema do seu main, layout do seu modo, sua persona, dicas e campeões novos.</p>
+          </article>
+        </div>
+        <div class="cartao privacidade" data-revelar>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.4"/></svg>
+          <p><strong>Nada fica guardado.</strong> Não existe banco de dados: a página é calculada na hora em que você busca e some quando você fecha. Abrir o link de novo monta tudo outra vez.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chamada-final">
+      <div class="conteiner">
+        <h2 data-revelar>Seu main está <span>esperando.</span></h2>
+        <a class="botao botao--primario" href="#titulo-principal" id="voltar-busca" data-magnetico data-revelar>
+          Buscar meu Riot ID
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape__grade">
+      <a class="marca" href="/"><i class="marca__simbolo" aria-hidden="true"></i>lolzin<span>.</span></a>
+      <p>O lolzin não é endossado pela Riot Games e não reflete as opiniões da Riot Games ou de qualquer pessoa oficialmente envolvida na produção ou gestão das propriedades da Riot Games. Riot Games e todas as propriedades associadas são marcas comerciais ou registradas da Riot Games, Inc.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/busca.js"></script>
+</body>
+</html>
